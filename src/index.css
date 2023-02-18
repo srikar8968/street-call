@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Westiva";
+  src: local("Westiva"),
+   url("./fonts/Westiva/Westiva-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Westiva";
+  src: local("Westiva"),
+   url("./fonts/Westiva/Westiva-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Westiva";
+  src: local("Westiva"),
+   url("./fonts/Westiva/Westiva-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Westiva";
+  src: local("Westiva"),
+   url("./fonts/Westiva/Westiva-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/* Merriweather */
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+   url("./fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+   url("./fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+   url("./fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+   url("./fonts/Merriweather/Merriweather-Black.ttf") format("truetype");
+  font-weight: 700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary: #e1b37a;
+  --primary-light: #CCBDB7;
+  --primary-dark: #c4aea7;
+  --light: #ede9e2;
+  --secondary: #201817;
+  --secondary-25: #645C5C;
+  --secondary-50: #6C645C;
+  --secondary-75: #7F7875;
+  --secondary-100: #948C84;
+
+  --header-h: 6.5rem;
+  --font-modern: "Westiva", serif;
+  --font-default: "Merriweather", serif;
+}
+
+
+body {
+  font-size: 1rem;
+  font-family: var(--font-default);
+  background-color: var(--light);
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/*|||||||||||||||||||||| Mobile(sm) ||||||||||||||||||||||*/
+
+@media(min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/*|||||||||||||||||||||| Tablet(md) ||||||||||||||||||||||*/
+
+@media(min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+  .container {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+}
+
+/*|||||||||||||||||||||| Laptop(lg) ||||||||||||||||||||||*/
+
+@media(min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/*|||||||||||||||||||||| Desktop(xl) ||||||||||||||||||||||*/
+
+@media(min-width: 1152px) {
+  .container {
+    max-width: 1152px;
+  }
 }

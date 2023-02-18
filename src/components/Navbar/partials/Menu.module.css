@@ -1,0 +1,58 @@
+.menuWrapper {
+  padding: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-light);
+}
+.menuList li {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+.menuList li:hover > a {
+  color: var(--secondary);
+}
+.menuList li > a {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--secondary-25);
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+.menuBackdrop {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 100%;
+  z-index: 0;
+}
+.menuBackdrop svg {
+  width: 20px;
+  height: 20px;
+}
+
+/*|||||||||||||||||||||| Mobile(sm) ||||||||||||||||||||||*/
+@media (min-width: 640px) {
+}
+
+/*|||||||||||||||||||||| Tablet(md) ||||||||||||||||||||||*/
+@media (min-width: 768px) {
+  .menuList li {
+    width: 33.333%;
+  }
+}
+
+/*|||||||||||||||||||||| Laptop(lg) ||||||||||||||||||||||*/
+@media (min-width: 1024px) {
+  .menuList li {
+    width: 25%;
+  }
+}
+
+/*|||||||||||||||||||||| Desktop(xl) ||||||||||||||||||||||*/
+@media (min-width: 1152px) {
+}

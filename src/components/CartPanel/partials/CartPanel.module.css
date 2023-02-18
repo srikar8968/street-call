@@ -1,0 +1,26 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 24rem;
+    height: 100%;
+    padding: 3rem 2rem;
+    background-color: var(--light);
+    border-left: 1px solid #fff;
+    z-index: 40;
+}
+
+.cartHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: var(--font-modern);
+    margin-bottom: 2rem;
+}
+
+.cartHeader svg {
+    width: 4rem;
+    margin-right: 1rem;
+}

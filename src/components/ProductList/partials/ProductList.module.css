@@ -1,0 +1,18 @@
+.wrapper {
+  padding: 4rem 0;
+  background-color: var(--light);
+}
+.listWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-family: var(--font-modern);
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 1rem;
+}

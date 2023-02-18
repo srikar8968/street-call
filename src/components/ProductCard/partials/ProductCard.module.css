@@ -1,0 +1,100 @@
+.wrapper {
+  position: relative;
+  width: 320px;
+  padding: 0.5rem 0.5rem;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.cover {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #fff;
+  min-height: 380px;
+  overflow: hidden;
+  z-index: 1;
+}
+.cover > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+.meta {
+  padding: 1.25rem;
+  width: 100%;
+  text-align: center;
+}
+.title {
+  font-family: var(--font-modern);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.title:hover {
+  text-decoration: underline;
+}
+.category {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--secondary-50);
+  text-transform: uppercase;
+}
+.price {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.375rem;
+}
+.expand {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--light);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItbWF4aW1pemUtMiI+PHBvbHlsaW5lIHBvaW50cz0iMTUgMyAyMSAzIDIxIDkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIHBvaW50cz0iOSAyMSAzIDIxIDMgMTUiPjwvcG9seWxpbmU+PGxpbmUgeDE9IjIxIiB5MT0iMyIgeDI9IjE0IiB5Mj0iMTAiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjIxIiB4Mj0iMTAiIHkyPSIxNCI+PC9saW5lPjwvc3ZnPg==");
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 2.25rem;
+}
+.colorVariant {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.5rem;
+  background-color: var(--light);
+  border-top-right-radius: 1rem;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+/*|||||||||||||||||||||| Mobile(sm) ||||||||||||||||||||||*/
+@media (min-width: 640px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+/*|||||||||||||||||||||| Tablet(md) ||||||||||||||||||||||*/
+@media (min-width: 768px) {
+  .cover {
+    min-height: 480px;
+  }
+}
+
+/*|||||||||||||||||||||| Laptop(lg) ||||||||||||||||||||||*/
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 1rem;
+    width: 33.333%;
+  }
+}
+
+/*|||||||||||||||||||||| Desktop(xl) ||||||||||||||||||||||*/
+@media (min-width: 1152px) {
+}

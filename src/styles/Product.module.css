@@ -1,0 +1,82 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slides,
+.detail {
+  width: 50%;
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+
+.detail h1 {
+  font-family: var(--font-modern);
+  font-size: 3rem;
+  line-height: 1.125;
+  font-weight: 500;
+  margin: 0.25rem 0;
+}
+
+.category {
+  color: var(--secondary-25);
+  font-size: 1.125rem;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  min-height: 28rem;
+  background-color: var(--primary-light);
+  margin-bottom: 1rem;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.detailInner {
+  width: 100%;
+  position: sticky;
+  top: var(--header-h);
+  padding: 2rem 2rem 2rem 5rem;
+}
+
+.detailInner p {
+  font-size: 0.875rem;
+}
+
+.inventoryBadge {
+  padding: 0.25rem 0.75rem;
+  margin-left: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--primary-light);
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.inventoryEmpty {
+  background-color: var(--secondary-100);
+  color: var(--light);
+  opacity: 0.5;
+}
+
+.actionContainer {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.actionContainer button:first-child {
+  margin-right: 0.5rem;
+}
+.actionContainer button {
+  width: 100%;
+}

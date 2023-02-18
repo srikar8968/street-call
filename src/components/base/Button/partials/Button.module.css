@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+}
+
+.default {
+  background-color: var(--secondary-25);
+  border-color: var(--secondary-25);
+  color: var(--light);
+}
+
+.primaryOutline {
+  border: 2px solid var(--primary-dark);
+  color: var(--primary-dark);
+}
+
+.primary {
+  background-color: var(--primary-light);
+  color: #fff;
+  border-color: var(--primary-light);
+}
+
+.light {
+  background-color: #fff;
+  border-color: #fff;
+}

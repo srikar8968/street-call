@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: #fff;
+    padding: .5rem  ;
+    display: flex;
+    border-radius: .25rem;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.productThumb {
+    width: 4rem;
+    flex-shrink: 0;
+    border: 1px solid var(--light);
+    background-color: var(--light);
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.productContent {
+    padding: .5rem 1rem;
+}
+
+.productContent h5 {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: var(--font-modern);
+}
